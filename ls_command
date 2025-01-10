@@ -1,0 +1,5 @@
+- name: Run ls command on remote hosts
+  hosts: webservers
+  tasks:
+    - name: List files in /home
+      command: ls /home
